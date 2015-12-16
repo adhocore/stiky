@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sticky Notes</title>
+  <link rel="stylesheet" type="text/css" href="css/stiky.css" />
+</head>
+<body>
+  <div id="stikyapp">
+    <div id="notes"></div>
+  </div>
+  <script type="text/template" id="note-template">
+    <div class="note-wrapper" style="left: <%- left %>px; top: <%- top %>px;">
+      <div contenteditable="true" class="note-editable"><%= text %></div>
+      <div class="note-footer">
+        <p class="left">
+          <span class="note-handle note-move" title="Move note">&#8801;</span>
+          <span class="note-handle note-add" title="New note">&#10133;</span>
+          <span class="note-handle note-remove" title="Remove note">&#8211;</span>
+        </p>
+        <p class="right">Updated: <%- date %></p>
+      </div>
+    </div>
+  </script>
+  <script data-main="js/stiky" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.22/require.min.js"></script>
+</body>
+</html>
