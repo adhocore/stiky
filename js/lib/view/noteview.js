@@ -37,7 +37,6 @@ function (
 
     render: function() {
       this.$el.html(this.template(this.model.toJSON()));
-      console.log(this.$el.html());
       this.wrapper = this.$('.note-wrapper');
       this.input = this.$('.note-editable');
 
