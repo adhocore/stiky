@@ -1,3 +1,4 @@
+// Aritrary data setter/getter for use in global scope
 define(function () {
   var _data = {};
 
