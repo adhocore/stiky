@@ -6,7 +6,13 @@
 
 # components used
 
+- `requirejs`
 - `jquery`
 - `underscore`
 - `backbone`
 - `backbone-localstorage`
+
+
+# demo
+
+- [adhocore.github.io/stiky](https://adhocore.github.io/stiky/)
