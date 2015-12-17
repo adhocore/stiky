@@ -1,3 +1,4 @@
+// Configure module paths for require.js
 require.config({
   paths: {
     // From CDN
@@ -24,6 +25,7 @@ function (
   $,
   App
 ) {
+  // Boot the app on DOM ready
   $(function(){
     var app = new App;
   });

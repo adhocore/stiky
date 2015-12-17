@@ -14,6 +14,8 @@ function(
 
   var Note = Backbone.Model.extend({
 
+    // Defaults donot have `id` key,
+    // that will be managed by storage engine
     defaults: function() {
 
       return {

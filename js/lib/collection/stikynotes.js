@@ -2,7 +2,6 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  'localstore',
   'note',
 ],
 
@@ -10,7 +9,6 @@ function(
   $,
   _,
   Backbone,
-  LocalStorage,
   Note
 ) {
 
@@ -18,7 +16,8 @@ function(
 
     model: Note,
 
-    localStorage: new LocalStorage('notes'),
+    // Instantiate Note rather than LocalStorage
+    localStorage: new Note().localStorage,
 
   });
 
