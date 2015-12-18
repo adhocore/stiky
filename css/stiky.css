@@ -44,12 +44,12 @@ p.left, p.right {
 }
 
 p.left {
-  width: 22%;
+  width: 23%;
   float: left;
 }
 
 p.right {
-  width: 78%;
+  width: 77%;
   float: right;
   text-align: right;
 }
