@@ -2,7 +2,7 @@
   "short_name": "Stiky",
   "name": "Stiky",
   "display": "standalone",
-  "start_url": "index.html",
+  "start_url": "index.html?a=1",
   "theme_color": "#00AFF0",
   "background_color": "#fff"
 }
