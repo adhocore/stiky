@@ -3,6 +3,7 @@
 <head>
   <title>Sticky Notes</title>
   <link rel="stylesheet" type="text/css" href="css/stiky.css" />
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <div id="stikyapp">
@@ -21,6 +22,11 @@
       </div>
     </div>
   </script>
-  <script data-main="js/stiky" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.22/require.min.js"></script>
+  <script data-main="js/stiky" src="/js/vendor/require.min.js"></script>
+  <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/js/sw.js');
+    }
+  </script>
 </body>
 </html>
