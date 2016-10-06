@@ -1,19 +1,19 @@
 var cacheName = 'stiky-v1';
 var urlsToCache = [
-  '/',
-  '/manifest.json',
-  '/css/stiky.css',
-  '/js/sw.js',
-  '/js/stiky.js',
-  '/js/lib/stikyapp.js',
-  '/js/lib/collection/stikynotes.js',
-  '/js/lib/view/noteview.js',
-  '/js/lib/model/stikynote.js',
-  '/js/vendor/require.min.js',
-  '/js/vendor/jquery.min.js',
-  '/js/vendor/underscore.min.js',
-  '/js/vendor/backbone.min.js',
-  '/js/vendor/backbone.localstorage.min.js',
+  './',
+  'manifest.json',
+  'sw.js',
+  'css/stiky.css',
+  'js/stiky.js',
+  'js/lib/stikyapp.js',
+  'js/lib/collection/stikynotes.js',
+  'js/lib/view/noteview.js',
+  'js/lib/model/stikynote.js',
+  'js/vendor/require.min.js',
+  'js/vendor/jquery.min.js',
+  'js/vendor/underscore.min.js',
+  'js/vendor/backbone.min.js',
+  'js/vendor/backbone.localstorage.min.js',
 ];
 
 self.addEventListener('install', function(event) {
