@@ -1,6 +1,7 @@
 var cacheName = 'stiky-v1';
 var urlsToCache = [
   './',
+  'index.html?a=1',
   'manifest.json',
   'sw.js',
   'css/stiky.css',
