@@ -17,12 +17,16 @@ function(
     // Defaults donot have `id` key,
     // that will be managed by storage engine
     defaults: function() {
+      var total  = $('.note-wrapper').length;
+      var perRow = Math.floor($(document).width() / 230);
+      var top    = Math.floor(total / perRow) * 285;
+      var left   = Math.floor(total % perRow) * 230;
 
       return {
         text: '',
         date: new Date().toLocaleString(),
-        top: Math.round(Math.random() * (window.innerHeight - 255)),
-        left: Math.round(Math.random() * (window.innerWidth - 205)),
+        top: top,
+        left: left,
       };
 
     },
