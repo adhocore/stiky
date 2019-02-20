@@ -24,8 +24,8 @@ function (
       "blur .note-wrapper"    : "pushMe",
       "click .note-add"       : "newNote",
       "dblclick .note-remove"    : "removeNote",
-      "mousedown .note-move"  : "dragStart",
-      "mouseleave .note-move" : "dragStop",
+      // "mousedown .note-move"  : "dragStart",
+      // "mouseleave .note-move" : "dragStop",
     },
 
     initialize: function() {
