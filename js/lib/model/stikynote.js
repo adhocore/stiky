@@ -19,8 +19,8 @@ function(
     defaults: function() {
       var total  = $('.note-wrapper').length;
       var perRow = Math.floor($(document).width() / 230);
-      var top    = Math.floor(total / perRow) * 285;
-      var left   = Math.floor(total % perRow) * 230;
+      var top    = (Math.floor(total / perRow) * 280) + 5;
+      var left   = (Math.floor(total % perRow) * 230) + 10;
 
       return {
         text: '',
